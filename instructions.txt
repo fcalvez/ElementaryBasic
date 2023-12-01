@@ -1,0 +1,25 @@
+lire ligne(ptr)
+
+:label
+
+var x,y,z,inc,i
+array tabs
+
+jumpto [:]label
+return [:]label
+
+i = 32 + 5 * j
+i = i + 1
+
+var v1,v0,i,v2
+i <- 0
+v0 <- 0
+v1 <- 1
+:loop
+	print iteration $i : $v1
+	v2 <= v1 + v0
+	v0 <= v1
+	v1 <= v2
+	i <= i + 1
+	jumpto :loop
+

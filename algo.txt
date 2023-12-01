@@ -1,0 +1,26 @@
+ptr = 0
+
+code[] = lignes du code
+
+ligne =  code[ptr]
+
+Si fin de code
+	afficher terminé
+	stop
+
+Parser ligne
+	si error => 
+		afficher parse erreur
+			stop
+		
+Executer instruction
+	si error
+		afficher run erreur
+		si label on error
+			ptr = label on error
+
+		sinon
+			mettre à jour les status
+			mettre à jour ptr
+
+		
